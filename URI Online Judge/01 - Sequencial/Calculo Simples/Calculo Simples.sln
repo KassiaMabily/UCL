@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31605.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculo Simples", "Calculo Simples\Calculo Simples.csproj", "{70676DF2-D204-4709-8BE0-E0C1A9F0FC56}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70676DF2-D204-4709-8BE0-E0C1A9F0FC56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70676DF2-D204-4709-8BE0-E0C1A9F0FC56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70676DF2-D204-4709-8BE0-E0C1A9F0FC56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70676DF2-D204-4709-8BE0-E0C1A9F0FC56}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5BC5DDD9-31AB-4F88-9FD2-1052B5F4B27A}
+	EndGlobalSection
+EndGlobal

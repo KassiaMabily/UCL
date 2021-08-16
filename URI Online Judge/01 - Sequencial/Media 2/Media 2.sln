@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31605.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Media 2", "Media 2\Media 2.csproj", "{9518FC3E-6797-44A5-8AAA-1B6E20EA099D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soma Simples", "..\Soma Simples\Soma Simples\Soma Simples.csproj", "{60BD818B-7451-4E85-97AB-0FF61C453E14}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9518FC3E-6797-44A5-8AAA-1B6E20EA099D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9518FC3E-6797-44A5-8AAA-1B6E20EA099D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9518FC3E-6797-44A5-8AAA-1B6E20EA099D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9518FC3E-6797-44A5-8AAA-1B6E20EA099D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60BD818B-7451-4E85-97AB-0FF61C453E14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60BD818B-7451-4E85-97AB-0FF61C453E14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60BD818B-7451-4E85-97AB-0FF61C453E14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60BD818B-7451-4E85-97AB-0FF61C453E14}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {41A2EDBC-817A-4710-AF1D-315401D157BB}
+	EndGlobalSection
+EndGlobal
