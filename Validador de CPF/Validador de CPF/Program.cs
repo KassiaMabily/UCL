@@ -23,7 +23,7 @@ namespace Validador_de_CPF
 
             soma = 0;
             cpf = "";
-            for (int i = 8; i > 0; i--)
+            for (int i = 0; i < 9; i--)
             {
                 cpf += entered[i].ToString();
                 soma += int.Parse(cpf[i].ToString()) * multiplicador1[i];
