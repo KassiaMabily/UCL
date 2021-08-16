@@ -1,2 +1,2 @@
-# Sistemas de Informação: Algoritmos I - 2021/1
-Repository for storing study C# codes
+# UCL – Faculdade do Centro Leste
+Códigos desenvolvidos durante a graduação de Sistemas de Informação
