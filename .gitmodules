@@ -1,3 +1,6 @@
 [submodule "Gestão de Processos e Negócios/Quizzed"]
 	path = Gestão de Processos e Negócios/Quizzed
 	url = https://github.com/KassiaMabily/Quizzed.git
+[submodule "Algoritmos e Estrutura de Dados I/DoList"]
+	path = Algoritmos e Estrutura de Dados I/DoList
+	url = https://github.com/KassiaMabily/DoList.git
