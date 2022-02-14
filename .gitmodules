@@ -4,3 +4,6 @@
 [submodule "Algoritmos e Estrutura de Dados I/DoList"]
 	path = Algoritmos e Estrutura de Dados I/DoList
 	url = https://github.com/KassiaMabily/DoList.git
+[submodule "Algoritmos e Estrutura de Dados I/--force"]
+	path = Algoritmos e Estrutura de Dados I/--force
+	url = https://github.com/KassiaMabily/PeTI
