@@ -7,3 +7,6 @@
 [submodule "Algoritmos e Estrutura de Dados I/DoList"]
 	path = Algoritmos e Estrutura de Dados I/DoList
 	url = https://github.com/KassiaMabily/DoList.git
+[submodule "3º Período/Tecnologia Web/SoulEdu-Site"]
+	path = 3º Período/Tecnologia Web/SoulEdu-Site
+	url = https://github.com/KassiaMabily/SoulEdu-Site.git
