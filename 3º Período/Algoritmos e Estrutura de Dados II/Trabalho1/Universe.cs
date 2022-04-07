@@ -1,6 +1,8 @@
 using System;
+using System.Collections.Generic;
+using System.IO;
 
-float G = 6.674184 * Math.Pow(10, -11);
+double G = 6.674184 * Math.Pow(10, -11);
 
 class Universe {
 
@@ -30,7 +32,7 @@ class Universe {
         int counter = 0;
         foreach (var line in lines)
         {   
-            // Se for a primeira linha, pega as informações iniciais
+            // Se for a primeira linha, pega as informações iniciais de execução
             if( counter == 0 ) {
                 string[] data = line.Split(";");
 
@@ -48,6 +50,25 @@ class Universe {
         }
 
         return celestialBodies;
+    }
+
+    public void saveCelestialBodies(List<CelestialBody> celestialBodies, int i)
+    {
+        string file = "outputBodies.txt"; 
+
+        FileStream myFile = new FileStream(file, FileMode.OpenOrCreate, FileAccess.Write);
+        StreamWriter sw = new StreamWriter(meuArq, Encoding.UTF8);
+
+        string firstLine = String.Format("{0};{1}", celestialBodies.Count, i);
+        sw.WriteLine(listaTarefas[i].formatLineCSV());
+
+        for(int i = 0; i < celestialBodies.Count; i++) {
+            sw.WriteLine(celestialBodies[i].formatOutputFile());
+        }
+
+        sw.Close();
+        myFile.Close();
+
     }
 
     public double calculateEuclidienneDistance(CelestialBody body1, CelestialBody body2) 
@@ -71,8 +92,8 @@ class Universe {
         double Vx = body.getVelX() + (Ax * time);
         double Vy = body.getVely() + (Ay * time);
 
-        double Sx = body.getPosX() + Vx + ((Ax * Math.Pow(time, 2)) / 2);
-        double Sy = body.getPosY() + Vy + ((Ay * Math.Pow(time, 2)) / 2);
+        double Sx = body.getPosX() + body.getVelX() + ((Ax * Math.Pow(time, 2)) / 2);
+        double Sy = body.getPosY() + body.getVely() + ((Ay * Math.Pow(time, 2)) / 2);
         
         body.setPosX(Sx);
         body.setPosY(Sy);
@@ -98,9 +119,21 @@ class Universe {
 
     public void run() 
     {
-        for(int iteration = 0; iteration < numberIterations; iteration++) 
-        {
+        List<CelestialBody> celestialBodies = readCelestialBodies();
 
+        if(celestialBodies.Count > 1) {
+            for(int iteration = 0; iteration < numberIterations; iteration++) 
+            {
+                for (var i = 0; i < celestialBodies.Count; ++i)
+                {
+                    for (var j = i + 1; j < celestialBodies.Count; ++j)
+                    {
+                        ApplyGravityForces(celestialBodies[i], celestialBodies[j]);
+                    }
+                }
+
+                saveCelestialBodies(celestialBodies, i);
+            }
         }
     }
 
