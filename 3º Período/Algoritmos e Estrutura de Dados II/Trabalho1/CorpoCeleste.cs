@@ -4,12 +4,12 @@ using System;
 class CelestialBody {
     private string name;
 
-    private float posX;
-    private float posY;
+    private double posX;
+    private double posY;
     private float mass;
     private float radius;
-    private float velX;
-    private float velY;
+    private double velX;
+    private double velY;
 
 
     public CelestialBody(string n, float x, float y, float m, float r, float vx, float vy) {
@@ -27,11 +27,11 @@ class CelestialBody {
 
         name = float.Parse(data[0]);
         mass = float.Parse(data[1]);
-        radius = float.Parse(data[2]);
-        posX = float.Parse(data[3]);
-        posY = float.Parse(data[4]);
-        velX = float.Parse(data[5]);
-        velY = float.Parse(data[6]);
+        radius = double.Parse(data[2]);
+        posX = double.Parse(data[3]);
+        posY = double.Parse(data[4]);
+        velX = double.Parse(data[5]);
+        velY = double.Parse(data[6]);
     }
 
     public float getMass() {
@@ -44,6 +44,30 @@ class CelestialBody {
 
     public float getPosY() {
         return posY;
+    }
+
+    public float getVelX() {
+        return velX;
+    }
+
+    public float getVelY() {
+        return velY;
+    }
+
+    public void setPosX(double x) {
+        posX = x;
+    }
+
+    public void setPosY(double y) {
+        posY = y;
+    }
+
+    public void setVelX(double x) {
+        velX = x;
+    }
+
+    public void setVelY(double y) {
+        velY = y;
     }
 
     public void print() {

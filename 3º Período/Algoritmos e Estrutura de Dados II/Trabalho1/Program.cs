@@ -6,7 +6,9 @@ namespace Trabalho1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Universe universe = new Universe();
+
+            
         }
     }
 }
